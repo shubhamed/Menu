@@ -57,7 +57,8 @@ export enum AppMode {
   LANDING = 'LANDING',
   LOGIN = 'LOGIN',
   CUSTOMER = 'CUSTOMER',
-  OWNER = 'OWNER'
+  OWNER = 'OWNER',
+  CLONE = 'CLONE'
 }
 
 export enum UserTier {
@@ -80,7 +81,7 @@ export interface AggregatedMetrics {
   completionRate: number; // percentage
   mostPopularDishId: string;
   engagementRate: number;
-  
+
   // Sales Metrics
   totalOrders: number;
   avgOrderTime: number; // seconds
